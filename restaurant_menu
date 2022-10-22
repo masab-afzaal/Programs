@@ -1,0 +1,25 @@
+import java.util.*;
+
+class restaurant_menu {
+	public static void main(String[] args){
+		System.out.println(" Press \n (1 for Burger) \n (2 for pizza) \n (3 for tikka) \n (4 for chips)");
+		Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+		switch(n){
+			case 1:
+				System.out.println("300");
+				break;
+			case 2:
+				System.out.println("100");
+				break;
+			case 3:
+				System.out.println("800");
+				break;
+			case 4:
+				System.out.println("250");
+				break;
+			default:
+			System.out.println(" only press available items");												
+		}
+	}
+}
