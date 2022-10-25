@@ -1,33 +1,42 @@
 import java.util.*;
- public class calc{
-    public static void main(String args [] ){
-        int a,b, cal;
-        Scanner sc= new Scanner(System.in);
-        System.out.println("enter the number");
-        a=sc.nextInt();
-        System.out.println("enter number");
-        b=sc.nextInt();
-        System.out.println("1 add \n 2 sub \n 3 div\n 4 multi");
-        ch=sc.nextInt();
-        switch(cal){
-        case 1:
-        System.out.println("the addition of numbers" + (a+b));
-        break;
-        case 2:
-        System.out.println("the subtraction of numbers" + (a-b));
-        break;
-        case 3:
-        System.out.println("the division of numbers"+ (a/b));
-        break;
-        case 4:
-        System.out.println("the multiplication of numbers"+ (a*b));
-        break;
-        default:
-        System.out.println("Wrong Command");
-}
 
-        
+public class calc {
+	public static void main(String args []) {
 
-}
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Enter two numbers : ");
+		double num1 = sc.nextDouble();
+		double num2 = sc.nextDouble();
+	
+		System.out.println("select the operator :");
+		System.out.println("Press: \n1 for sum\n2 for Subtract \n3 for Multiply \n4 for Divide");
 
+		int calculator = sc.nextInt();
+		double calc = 0;
+		
+		switch(calculator){
+			case 1:
+				calc = num1/num2;
+				System.out.println(calc);
+				break;
+			case 2:
+				calc = num1*num2;
+				System.out.println(calc);
+				break;
+			case 3:
+				calc = num1+num2;	
+				System.out.println(calc);
+				break;
+			case 4:
+				calc = num1-num2;
+				System.out.println(calc);	
+				break;
+			default:
+				System.out.println("Wrong Command");
+
+
+		}
+
+	}
 }
